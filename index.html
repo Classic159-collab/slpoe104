@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SL poe 104.3.1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>ร้านค้า SL poe 104.3.1</h1>
+
+    <div class="container">
+        <div class="currency-item">
+            <img src="images/chaos_orb.png" alt="Chaos Orb">
+            <p>💰 <strong>Chaos Orb</strong></p>
+            <p>📦 คงเหลือ: <span id="chaos_stock">100</span> ชิ้น</p>
+            <p>💵 ราคา: 0.3 บาท</p>
+            <button onclick="addToCart('chaos', 'Chaos Orb', 0.3)">🛒 ใส่ตะกร้า</button>
+        </div>
+
+        <div class="currency-item">
+            <img src="images/divine_orb.png" alt="Divine Orb">
+            <p>💰 <strong>Divine Orb</strong></p>
+            <p>📦 คงเหลือ: <span id="divine_stock">50</span> ชิ้น</p>
+            <p>💵 ราคา: 5 บาท</p>
+            <button onclick="addToCart('divine', 'Divine Orb', 5)">🛒 ใส่ตะกร้า</button>
+        </div>
+
+        <div class="currency-item">
+            <img src="images/exalted_orb.png" alt="Exalted Orb">
+            <p>💰 <strong>Exalted Orb</strong></p>
+            <p>📦 คงเหลือ: <span id="exalted_stock">30</span> ชิ้น</p>
+            <p>💵 ราคา: 0.3 บาท</p>
+            <button onclick="addToCart('exalted', 'Exalted Orb', 0.3)">🛒 ใส่ตะกร้า</button>
+        </div>
+
+        <div class="currency-item">
+            <img src="images/mirror_of_kalandra.png" alt="Mirror of Kalandra">
+            <p>💰 <strong>Mirror of Kalandra</strong></p>
+            <p>📦 คงเหลือ: <span id="mirror_stock">5</span> ชิ้น</p>
+            <p>💵 ราคา: 1000 บาท</p>
+            <button onclick="addToCart('mirror', 'Mirror of Kalandra', 1000)">🛒 ใส่ตะกร้า</button>
+        </div>
+    </div>
+
+    <!-- ตะกร้าสินค้า -->
+    <div class="cart-sidebar">
+        <h2>🛒 ตะกร้าสินค้า</h2>
+        <ul id="cart-list"></ul>
+        <p>💰 ยอดรวม: <span id="total-price">0</span> บาท</p>
+        <button onclick="checkout()">💳 ชำระเงิน</button>
+    </div>
+
+    <h2>📜 ประวัติการซื้อขาย (แสดง 10 รายการล่าสุด)</h2>
+    <ul id="transaction-history"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
